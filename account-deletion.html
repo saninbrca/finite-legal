@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Account Deletion — Finite</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
+
+  :root {
+    --green: #00C853;
+    --black: #0A0A0A;
+    --white: #FFFFFF;
+    --grey: #8E8E93;
+    --card: #F2F2F7;
+    --border: rgba(0,0,0,0.08);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--white);
+    color: var(--black);
+    line-height: 1.7;
+    padding: 0 20px;
+  }
+
+  .container { max-width: 680px; margin: 0 auto; padding-bottom: 80px; }
+
+  .header {
+    padding: 48px 0 32px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 40px;
+  }
+
+  .logo { font-size: 22px; font-weight: 600; margin-bottom: 8px; }
+  .logo span { color: var(--green); }
+  .page-title { font-size: 32px; font-weight: 600; margin-bottom: 8px; }
+  .last-updated { font-size: 13px; color: var(--grey); }
+
+  .lang-switch { font-size: 13px; color: var(--grey); margin-top: 10px; }
+  .lang-switch a { color: var(--green); text-decoration: none; }
+
+  .section {
+    margin-bottom: 28px;
+    padding: 24px;
+    background: var(--card);
+    border-radius: 16px;
+  }
+
+  .section-title {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--grey);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 16px;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--black);
+  }
+
+  p { font-size: 15px; color: #333; margin-bottom: 12px; }
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    font-size: 15px;
+    color: #333;
+    padding-left: 20px;
+    margin-bottom: 12px;
+  }
+
+  ul li { margin-bottom: 6px; }
+
+  .highlight {
+    background: white;
+    border-radius: 10px;
+    padding: 16px;
+    margin-top: 12px;
+    border-left: 3px solid var(--green);
+    font-size: 14px;
+    color: #333;
+  }
+
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    font-size: 14px;
+  }
+
+  .data-table th {
+    text-align: left;
+    padding: 8px 12px;
+    background: white;
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--grey);
+    border-radius: 8px 8px 0 0;
+  }
+
+  .data-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+
+  .data-table tr:last-child td { border-bottom: none; }
+
+  a { color: var(--green); text-decoration: none; }
+
+  .footer {
+    text-align: center;
+    font-size: 13px;
+    color: var(--grey);
+    padding: 32px 0;
+    border-top: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="logo">Fin<span>ite</span></div>
+    <h1 class="page-title">Account Deletion</h1>
+    <div class="last-updated">Last updated: August 2026 · Finite (Android app) · Sanin Brica</div>
+    <div class="lang-switch"><a href="kontoloeschung.html">Deutsche Fassung</a></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">In short</div>
+    <p>You can have your Finite account and the data associated with it deleted at any time, free of charge and without giving a reason. There are two ways to do it: in the app, or by sending us an email.</p>
+    <div class="highlight">This page is public. You do <strong>not</strong> need to sign in and you do <strong>not</strong> need to have Finite installed to read it or to request deletion. <strong>The email route also works if you have already uninstalled the app</strong> or can no longer sign in.</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">How to request deletion</div>
+
+    <h2>Option 1 — in the app</h2>
+    <p>Open Finite and go to <strong>Settings → Delete account</strong>. Your account and your data are deleted as described below.</p>
+
+    <h2 style="margin-top: 20px;">Option 2 — by email (also works after uninstalling)</h2>
+    <p>Send an email to <a href="mailto:support.stopdooming@gmail.com">support.stopdooming@gmail.com</a> with:</p>
+    <ul>
+      <li><strong>Subject:</strong> Account deletion</li>
+      <li><strong>Your request</strong> that your Finite account be deleted</li>
+      <li><strong>Your username</strong> in the app, if you have set one</li>
+    </ul>
+    <p>Please send the email from the address you registered with — that is how we identify the account. If you write from a different address, we may have to ask you an additional question before deleting, so that nobody else can delete your account.</p>
+    <p>There is no web form and no online account portal: deletion requests are handled by email only.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">What gets deleted</div>
+    <p>All personal data we hold about you is deleted. In concrete terms, this covers every data category listed in our <a href="privacy.html">Privacy Policy</a>:</p>
+    <table class="data-table">
+      <tr>
+        <th>Data</th>
+        <th>What it is</th>
+      </tr>
+      <tr>
+        <td><strong>Account &amp; profile data</strong></td>
+        <td>Email address, Firebase UID, username, and your sign-in credentials (the account itself is removed from Firebase Authentication, including a Google sign-in link)</td>
+      </tr>
+      <tr>
+        <td><strong>Challenge history</strong></td>
+        <td>All your challenges, past and present, together with their daily logs — including your challenge configuration: monitored apps, block lists (domains), limits, schedules and any free text you entered yourself (motivation)</td>
+      </tr>
+      <tr>
+        <td><strong>Usage data</strong></td>
+        <td>Daily usage duration of monitored apps, number of (deliberate) opens, streak and progress</td>
+      </tr>
+      <tr>
+        <td><strong>Permission status</strong></td>
+        <td>The recorded times at which a required permission (overlay or Accessibility Service) was withdrawn or restored, and the app's periodic sign of life</td>
+      </tr>
+      <tr>
+        <td><strong>Circumvention detection</strong></td>
+        <td>The fallback records of monitored apps used while the Accessibility Service was disabled</td>
+      </tr>
+      <tr>
+        <td><strong>Technical installation identifiers</strong></td>
+        <td>Push token (FCM) and Firebase Installations ID stored on your user record</td>
+      </tr>
+      <tr>
+        <td><strong>Support requests</strong></td>
+        <td>Email address, username, Firebase UID, subject, message text, device model, Android version and app version from any support request you sent us</td>
+      </tr>
+      <tr>
+        <td><strong>Data on your device</strong></td>
+        <td>The app's local database is cleared when you delete the account in the app; it is removed in full when you uninstall Finite</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">What is retained, and why</div>
+    <p>One category is kept after deletion:</p>
+    <ul>
+      <li><strong>Records of consent</strong> — evidence of your acceptance of the Terms and Conditions, the Privacy Policy and the age confirmation (18+). These are retained as proof that consent was given, on the basis of Art. 6(1)(c) GDPR (legal obligation).</li>
+    </ul>
+    <!--
+      TODO (money features): once MONEY_FEATURES_ENABLED is flipped to true, the
+      paragraph below must be replaced by the retention rule for payment records
+      (statutory retention of financial/accounting records, Stripe as processor),
+      in the same pass that updates privacy.html / datenschutz.html.
+    -->
+    <div class="highlight">In this version of Finite, <strong>no payment, credit card or bank details</strong> are collected or processed. There are therefore no financial or accounting records that would have to be retained for statutory reasons.</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">How long it takes</div>
+    <p>We respond to requests within 30 days in accordance with Art. 12(3) GDPR. All personal data is deleted within 30 days of account deletion, with the exception of the records of consent named above.</p>
+    <p>Deletion is permanent: once your data has been deleted it cannot be restored, and your challenge history and progress are gone for good.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Controller &amp; contact</div>
+    <p>Sanin Brica, Haselweg 3, 4073 Hitzing, Austria<br>
+    Email: <a href="mailto:support.stopdooming@gmail.com">support.stopdooming@gmail.com</a><br>
+    Phone: +43 663 06448447</p>
+    <p>Full details of what we store and why: <a href="privacy.html">Privacy Policy</a>. Right to lodge a complaint with the Austrian Data Protection Authority: <a href="https://www.dsb.gv.at">dsb.gv.at</a></p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Language versions</div>
+    <p>This document is a translation of the German original. In the event of any discrepancy between the German and English versions, the German version shall prevail.</p>
+  </div>
+
+  <div class="footer">
+    © 2026 Finite · Sanin Brica · <a href="imprint.html">Legal Notice</a> · <a href="terms.html">Terms</a>
+  </div>
+</div>
+</body>
+</html>

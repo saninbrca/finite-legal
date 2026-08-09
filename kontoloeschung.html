@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Konto löschen — Finite</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap');
+
+  :root {
+    --green: #00C853;
+    --black: #0A0A0A;
+    --white: #FFFFFF;
+    --grey: #8E8E93;
+    --card: #F2F2F7;
+    --border: rgba(0,0,0,0.08);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: var(--white);
+    color: var(--black);
+    line-height: 1.7;
+    padding: 0 20px;
+  }
+
+  .container { max-width: 680px; margin: 0 auto; padding-bottom: 80px; }
+
+  .header {
+    padding: 48px 0 32px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 40px;
+  }
+
+  .logo { font-size: 22px; font-weight: 600; margin-bottom: 8px; }
+  .logo span { color: var(--green); }
+  .page-title { font-size: 32px; font-weight: 600; margin-bottom: 8px; }
+  .last-updated { font-size: 13px; color: var(--grey); }
+  .lang-switch { font-size: 13px; color: var(--grey); margin-top: 10px; }
+  .lang-switch a { color: var(--green); text-decoration: none; }
+
+  .section {
+    margin-bottom: 28px;
+    padding: 24px;
+    background: var(--card);
+    border-radius: 16px;
+  }
+
+  .section-title {
+    font-size: 11px;
+    font-weight: 600;
+    color: var(--grey);
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    margin-bottom: 16px;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 12px;
+    color: var(--black);
+  }
+
+  p { font-size: 15px; color: #333; margin-bottom: 12px; }
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    font-size: 15px;
+    color: #333;
+    padding-left: 20px;
+    margin-bottom: 12px;
+  }
+
+  ul li { margin-bottom: 6px; }
+
+  .highlight {
+    background: white;
+    border-radius: 10px;
+    padding: 16px;
+    margin-top: 12px;
+    border-left: 3px solid var(--green);
+    font-size: 14px;
+    color: #333;
+  }
+
+  .data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+    font-size: 14px;
+  }
+
+  .data-table th {
+    text-align: left;
+    padding: 8px 12px;
+    background: white;
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--grey);
+    border-radius: 8px 8px 0 0;
+  }
+
+  .data-table td {
+    padding: 10px 12px;
+    border-bottom: 1px solid var(--border);
+    vertical-align: top;
+  }
+
+  .data-table tr:last-child td { border-bottom: none; }
+
+  a { color: var(--green); text-decoration: none; }
+
+  .footer {
+    text-align: center;
+    font-size: 13px;
+    color: var(--grey);
+    padding: 32px 0;
+    border-top: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <div class="header">
+    <div class="logo">Fin<span>ite</span></div>
+    <h1 class="page-title">Konto löschen</h1>
+    <div class="last-updated">Stand: August 2026 · Finite (Android-App) · Sanin Brica</div>
+    <div class="lang-switch"><a href="account-deletion.html">English version</a></div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Kurz gefasst</div>
+    <p>Du kannst dein Finite-Konto und die damit verbundenen Daten jederzeit löschen lassen — kostenlos und ohne Angabe von Gründen. Dafür gibt es zwei Wege: in der App oder per E-Mail an uns.</p>
+    <div class="highlight">Diese Seite ist öffentlich. Du musst dich <strong>nicht</strong> anmelden und Finite <strong>nicht</strong> installiert haben, um sie zu lesen oder eine Löschung zu beantragen. <strong>Der Weg per E-Mail funktioniert auch dann, wenn du die App bereits deinstalliert hast</strong> oder dich nicht mehr anmelden kannst.</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">So beantragst du die Löschung</div>
+
+    <h2>Weg 1 — in der App</h2>
+    <p>Öffne Finite und gehe zu <strong>Einstellungen → Konto löschen</strong>. Dein Konto und deine Daten werden wie unten beschrieben gelöscht.</p>
+
+    <h2 style="margin-top: 20px;">Weg 2 — per E-Mail (funktioniert auch nach der Deinstallation)</h2>
+    <p>Schreib eine E-Mail an <a href="mailto:support.stopdooming@gmail.com">support.stopdooming@gmail.com</a> mit:</p>
+    <ul>
+      <li><strong>Betreff:</strong> Kontolöschung</li>
+      <li><strong>Deiner Bitte</strong>, dein Finite-Konto zu löschen</li>
+      <li><strong>Deinem Benutzernamen</strong> in der App, sofern du einen vergeben hast</li>
+    </ul>
+    <p>Bitte schreib uns von der E-Mail-Adresse aus, mit der du dich registriert hast — darüber ordnen wir das Konto zu. Schreibst du von einer anderen Adresse, müssen wir vor der Löschung unter Umständen eine zusätzliche Frage stellen, damit niemand anderes dein Konto löschen kann.</p>
+    <p>Es gibt kein Webformular und kein Online-Konto-Portal: Löschanfragen werden ausschließlich per E-Mail bearbeitet.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Was gelöscht wird</div>
+    <p>Sämtliche personenbezogenen Daten, die wir über dich gespeichert haben, werden gelöscht. Konkret betrifft das jede Datenkategorie, die in unserer <a href="datenschutz.html">Datenschutzerklärung</a> aufgeführt ist:</p>
+    <table class="data-table">
+      <tr>
+        <th>Daten</th>
+        <th>Worum es sich handelt</th>
+      </tr>
+      <tr>
+        <td><strong>Konto- und Profildaten</strong></td>
+        <td>E-Mail-Adresse, Firebase UID, Benutzername sowie deine Anmeldedaten (das Konto selbst wird aus Firebase Authentication entfernt, einschließlich einer Verknüpfung mit Google Sign-In)</td>
+      </tr>
+      <tr>
+        <td><strong>Challenge-Verlauf</strong></td>
+        <td>Alle deine Challenges, vergangene wie laufende, samt ihren Tagesprotokollen — einschließlich deiner Challenge-Konfiguration: überwachte Apps, Sperrlisten (Domains), Limits, Zeitpläne und dein selbst eingegebener Freitext (Motivation)</td>
+      </tr>
+      <tr>
+        <td><strong>Nutzungsdaten</strong></td>
+        <td>Tägliche Nutzungsdauer der überwachten Apps, Anzahl (bewusster) Öffnungen, Streak und Fortschritt</td>
+      </tr>
+      <tr>
+        <td><strong>Berechtigungs-Status</strong></td>
+        <td>Die erfassten Zeitpunkte, zu denen eine notwendige Berechtigung (Overlay bzw. Bedienungshilfe) entzogen oder wiederhergestellt wurde, sowie das regelmäßige Lebenszeichen der App</td>
+      </tr>
+      <tr>
+        <td><strong>Umgehungserkennung</strong></td>
+        <td>Die ersatzweise erfassten Aufzeichnungen darüber, welche überwachten Apps bei deaktiviertem Bedienungshilfe-Dienst genutzt wurden</td>
+      </tr>
+      <tr>
+        <td><strong>Technische Installationskennungen</strong></td>
+        <td>Push-Token (FCM) und Firebase Installations ID, die in deinem Nutzerdokument gespeichert sind</td>
+      </tr>
+      <tr>
+        <td><strong>Support-Anfragen</strong></td>
+        <td>E-Mail-Adresse, Benutzername, Firebase UID, Betreff, Nachrichtentext, Gerätemodell, Android-Version und App-Version aus von dir gesendeten Support-Anfragen</td>
+      </tr>
+      <tr>
+        <td><strong>Daten auf deinem Gerät</strong></td>
+        <td>Die lokale Datenbank der App wird geleert, wenn du das Konto in der App löschst; bei einer Deinstallation von Finite wird sie vollständig entfernt</td>
+      </tr>
+    </table>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Was aufbewahrt wird — und warum</div>
+    <p>Eine Kategorie bleibt nach der Löschung erhalten:</p>
+    <ul>
+      <li><strong>Einwilligungsnachweise</strong> — der Nachweis deiner Zustimmung zu AGB, Datenschutz und Altersbestätigung (18+). Diese werden zum Nachweis der erteilten Zustimmung aufbewahrt, auf Grundlage von Art. 6 Abs. 1 lit. c DSGVO (rechtliche Verpflichtung).</li>
+    </ul>
+    <!--
+      TODO (Geld-Features): Sobald MONEY_FEATURES_ENABLED auf true steht, ist der
+      folgende Absatz durch die Aufbewahrungsregel für Zahlungsbelege zu ersetzen
+      (gesetzliche Aufbewahrung von Finanz-/Buchhaltungsunterlagen, Stripe als
+      Zahlungsdienstleister) — im selben Durchgang wie privacy.html / datenschutz.html.
+    -->
+    <div class="highlight">In dieser Version von Finite werden <strong>keine Zahlungs-, Kreditkarten- oder Bankdaten</strong> erhoben oder verarbeitet. Es gibt daher keine Finanz- oder Buchhaltungsunterlagen, die aus gesetzlichen Gründen aufbewahrt werden müssten.</div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Wie lange es dauert</div>
+    <p>Wir beantworten Anfragen innerhalb von 30 Tagen gemäß Art. 12 Abs. 3 DSGVO. Nach Kontolöschung werden alle personenbezogenen Daten innerhalb von 30 Tagen gelöscht, ausgenommen die oben genannten Einwilligungsnachweise.</p>
+    <p>Die Löschung ist endgültig: Einmal gelöschte Daten lassen sich nicht wiederherstellen, dein Challenge-Verlauf und dein Fortschritt sind damit unwiederbringlich weg.</p>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Verantwortlicher &amp; Kontakt</div>
+    <p>Sanin Brica, Haselweg 3, 4073 Hitzing, Österreich<br>
+    E-Mail: <a href="mailto:support.stopdooming@gmail.com">support.stopdooming@gmail.com</a><br>
+    Tel: +43 663 06448447</p>
+    <p>Vollständige Angaben dazu, welche Daten wir wozu speichern: <a href="datenschutz.html">Datenschutzerklärung</a>. Beschwerderecht bei der österreichischen Datenschutzbehörde: <a href="https://www.dsb.gv.at">dsb.gv.at</a></p>
+  </div>
+
+  <div class="footer">
+    © 2026 Finite · Sanin Brica · <a href="impressum.html">Impressum</a> · <a href="agb.html">AGB</a>
+  </div>
+</div>
+</body>
+</html>
